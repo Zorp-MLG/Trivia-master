@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quiz time lol</title>
+</head>
+<body>
+    <h1>Welcome to quiz</h1>
+    <p>captalize every first letter of answers</p>
+    
+    <p>what year did the 911 attack happen</p>
+    <input type="text" id="q1">
+    <button onclick="checkQ1()">submit</button>
+    <p id="result1"></p>
+    
+    <p id="scoreDisplay1"></p>
+    
+    <p>what country is meatballs famously from?</p>
+    <input type="text" id="q2">
+    <button onclick="checkQ2()">submit</button>
+    <p id="result2"></p>
+    
+    <p id="scoreDisplay2"></p>
+    
+    <p>how many planets r in our solar system?</p>
+    <input type="text" id="q3">
+    <button onclick="checkQ3()">submit</button>
+    <p id="result3"></p>
+    
+    <p id="scoreDisplay3"></p>
+    
+    <p>what food is italy known for?</p>
+    <input type="text" id="q4">
+    <button onclick="checkQ4()">submit</button>
+    <p id="result4"></p>
+    
+    <p id="scoreDisplay4"></p>
+    
+    <p>what year did man walk on the moon?</p>
+    <input type="text" id="q5">
+    <button onclick="checkQ5()">submit</button>
+    <p id="result5"></p>
+    
+    <p id="scoreDisplay5"></p>
+    
+    <p>what is the largest animal in the world?</p>
+    <input type="text" id="q6">
+    <button onclick="checkQ6()">submit</button>
+    <p id="result6"></p>
+    
+    <p id="scoreDisplay6"></p>
+    
+    <p id="finalScore"></p>
+    
+    <script>
+        let score = 0
+        
+        function checkQ1() {
+            let answer = document.getElementById('q1').value
+            if(answer == "2001") {
+                score = 1
+                if(answer == "2001") {
+                    document.getElementById('result1').innerHTML = "correct!"
+                }
+            }
+            else {
+                document.getElementById('result1').innerHTML = "wrong! it was 2001."
+            }
+            if(answer == "2001") {}
+            else { return }
+            document.getElementById('scoreDisplay1').innerHTML = "your score is " + score
+            document.getElementById('q1').disabled = true
+        }
+        
+        function checkQ2() {
+            let answer = document.getElementById('q2').value
+            if(answer == "Sweden") {
+                score = 2
+                if(answer == "Sweden") {
+                    document.getElementById('result2').innerHTML = "correct!"
+                }
+            }
+            else {
+                document.getElementById('result2').innerHTML = "wrong! it was sweden."
+            }
+            if(answer == "Sweden") {}
+            else { return }
+            document.getElementById('scoreDisplay2').innerHTML = "your score is " + score
+            document.getElementById('q2').disabled = true
+        }
+        
+        function checkQ3() {
+            let answer = document.getElementById('q3').value
+            if(answer == "8") {
+                score = 3
+                if(answer == "8") {
+                    document.getElementById('result3').innerHTML = "correct!"
+                }
+            }
+            else {
+                document.getElementById('result3').innerHTML = "wrong! it was 8 (pluto isnt a planet lol)."
+            }
+            if(answer == "8") {}
+            else { return }
+            document.getElementById('scoreDisplay3').innerHTML = "your score is " + score
+            document.getElementById('q3').disabled = true
+        }
+        
+        function checkQ4() {
+            let answer = document.getElementById('q4').value
+            if(answer == "Pizza") {
+                score = 4
+                if(answer == "Pizza") {
+                    document.getElementById('result4').innerHTML = "correct!"
+                }
+            }
+            else {
+                document.getElementById('result4').innerHTML = "wrong! it was pizza."
+            }
+            if(answer == "Pizza") {}
+            else { return }
+            document.getElementById('scoreDisplay4').innerHTML = "your score is " + score
+            document.getElementById('q4').disabled = true
+        }
+        
+        function checkQ5() {
+            let answer = document.getElementById('q5').value
+            if(answer == "1969") {
+                score = 5
+                if(answer == "1969") {
+                    document.getElementById('result5').innerHTML = "correct!"
+                }
+            }
+            else {
+                document.getElementById('result5').innerHTML = "wrong! it was 1969."
+            }
+            if(answer == "1969") {}
+            else { return }
+            document.getElementById('scoreDisplay5').innerHTML = "your score is " + score
+            document.getElementById('q5').disabled = true
+        }
+        
+        function checkQ6() {
+            let answer = document.getElementById('q6').value
+            if(answer == "Blue Whale") {
+                score = 6
+                if(answer == "Blue Whale") {
+                    document.getElementById('result6').innerHTML = "correct!"
+                }
+            }
+            else {
+                document.getElementById('result6').innerHTML = "wrong! it was the blue whale."
+            }
+            if(answer == "Blue Whale") {}
+            else { return }
+            document.getElementById('scoreDisplay6').innerHTML = "your score is " + score
+            document.getElementById('q6').disabled = true
+            document.getElementById('finalScore').innerHTML = "FINAL SCORE: " + score + "/6 !!!"
+        }
+    </script>
+</body>
+</html>
